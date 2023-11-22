@@ -21,13 +21,6 @@
   "background": {
     "scripts": ["background.js"]
   },
-  "web_accessible_resources": ["ConfigTicketeroPADs.json"],
-  "action": {
-    "default_popup": "popup.html",
-    "default_icon": {
-      "16": "icono.webp",
-      "48": "icono.webp",
-      "128": "icono.webp"
-    }
-  }
+  "web_accessible_resources": ["ConfigTicketeroPADs.json"]
+  
 }

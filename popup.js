@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
           chrome.cookies.set(
             {
               name: "cookie_tickets",
-              url: "http://192.168.19.37/*",
+              url: "http://192.168.17.21/",
               value: JSON.stringify(jsonData),
               expirationDate: Date.now() + 3600,
             },
@@ -68,6 +68,43 @@ document.addEventListener("DOMContentLoaded", function () {
               }
             }
           );
+
+          chrome.cookies.set(
+            {
+              name: "cookie_tickets",
+              url: "http://192.168.30.21/",
+              value: JSON.stringify(jsonData),
+              expirationDate: Date.now() + 3600,
+            },
+            function (cookie) {
+              if (chrome.runtime.lastError) {
+                console.error(chrome.runtime.lastError);
+              } else {
+                console.log("Cookie establecida:", cookie);
+                // Actualiza la vista con el valor de la cookie
+                cookieValueDiv.textContent = "Json establecida con exito";
+              }
+            }
+          );
+          chrome.cookies.set(
+            {
+              name: "cookie_tickets",
+              url: "http://192.168.17.36/",
+              value: JSON.stringify(jsonData),
+              expirationDate: Date.now() + 3600,
+            },
+            function (cookie) {
+              if (chrome.runtime.lastError) {
+                console.error(chrome.runtime.lastError);
+              } else {
+                console.log("Cookie establecida:", cookie);
+                // Actualiza la vista con el valor de la cookie
+                cookieValueDiv.textContent = "Json establecida con exito";
+              }
+            }
+          );
+
+          
         });
     });
   });
