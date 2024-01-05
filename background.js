@@ -11,7 +11,7 @@ fetch(chrome.extension.getURL('/ConfigTicketeroPADs.json'))
       "name": "cookie_tickets",
       "url": "http://localhost:4200/",
       "value": JSON.stringify(jsonData),
-      expirationDate: Date.now() + 3600,
+      expirationDate: Date.now() + 3600*5,
     });
 
       // Establece la cookie después de obtener el JSON
@@ -19,21 +19,21 @@ fetch(chrome.extension.getURL('/ConfigTicketeroPADs.json'))
         "name": "cookie_tickets",
         "url": "http://192.168.17.21/",
         "value": JSON.stringify(jsonData),
-        expirationDate: Date.now() + 3600,
+        expirationDate: Date.now() + 3600*5,
       });
 
       chrome.cookies.set({
         "name": "cookie_tickets",
         "url": "http://192.168.30.21/",
         "value": JSON.stringify(jsonData),
-        expirationDate: Date.now() + 3600,
+        expirationDate: Date.now() + 3600*5,
       });
 
       chrome.cookies.set({
         "name": "cookie_tickets",
         "url": "http://192.168.17.36/",
         "value": JSON.stringify(jsonData),
-        expirationDate: Date.now() + 3600,
+        expirationDate: Date.now() + 3600*5,
       });
   
     setTimeout(function () {
@@ -41,7 +41,7 @@ fetch(chrome.extension.getURL('/ConfigTicketeroPADs.json'))
         "name": "cookie_tickets",
         "url": "http://localhost:4200/",
         "value": JSON.stringify(jsonData),
-        expirationDate: Date.now() + 3600,
+        expirationDate: Date.now() + 3600*5,
       });
     }, 1000*60*60);
   });

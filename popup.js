@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
               name: "cookie_tickets",
               url: "http://localhost:4200/",
               value: JSON.stringify(jsonData),
-              expirationDate: Date.now() + 3600,
+              expirationDate: Date.now() + 3600*5,
             },
             function (cookie) {
               if (chrome.runtime.lastError) {
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
               name: "cookie_tickets",
               url: "http://192.168.19.36/",
               value: JSON.stringify(jsonData),
-              expirationDate: Date.now() + 3600,
+             expirationDate: Date.now() + 3600*5,
             },
             function (cookie) {
               if (chrome.runtime.lastError) {
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
               name: "cookie_tickets",
               url: "http://192.168.17.21/",
               value: JSON.stringify(jsonData),
-              expirationDate: Date.now() + 3600,
+             expirationDate: Date.now() + 3600*5,
             },
             function (cookie) {
               if (chrome.runtime.lastError) {
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
               name: "cookie_tickets",
               url: "http://192.168.30.21/",
               value: JSON.stringify(jsonData),
-              expirationDate: Date.now() + 3600,
+             expirationDate: Date.now() + 3600*5,
             },
             function (cookie) {
               if (chrome.runtime.lastError) {
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
               name: "cookie_tickets",
               url: "http://192.168.17.36/",
               value: JSON.stringify(jsonData),
-              expirationDate: Date.now() + 3600,
+             expirationDate: Date.now() + 3600*5,
             },
             function (cookie) {
               if (chrome.runtime.lastError) {

@@ -2,6 +2,7 @@
   "config": {
   "idPad": "1202.9",
   "codigoPad" : "PA12",
-  "mostrarTipoFila" : false
+  "mostrarTipoFila" : false,
+  "VideoLocal": false
   }
 }
